@@ -80,7 +80,8 @@ const AddZonePage = () => {
                             <td style={{ border: '1px solid #ddd', padding: '8px' }}>{site.name}</td>
                             <td style={{ border: '1px solid #ddd', padding: '8px' }}>{site.status}</td>
                             <td style={{ border: '1px solid #ddd', padding: '8px' }}>{site.status === 'Approved' && site.zones.length > 0 ? site.zones[0].type : site.status}</td>
-                            <td style={{ border: '1px solid #ddd', padding: '8px' }}>{site.status === 'Approved' && site.zones.length > 0 ? site.zones[0].trackingCode : 'N/A'}</td>
+                           <td style={{ border: '1px solid #ddd', padding: '8px' }}>{site.status === 'Approved' && site.zones.length > 0 ? (<a href={site.zones[0].trackingCode}>{site.zones[0].trackingCode}</a>) : ('N/A')}</td>
+
                         </tr>
                     ))}
                 </tbody>
