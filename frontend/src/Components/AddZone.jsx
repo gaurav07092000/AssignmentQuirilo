@@ -29,6 +29,7 @@ const AddZonePage = () => {
             alert('Zone added successfully!');
             setType('');
             setCPC('');
+            window.location.reload();
         } catch (error) {
             console.error('Failed to add zone:', error);
             alert('Failed to add zone. Please try again.');
