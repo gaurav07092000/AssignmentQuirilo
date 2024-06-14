@@ -22,6 +22,7 @@ const AddSitePage = () => {
                 status: 'Pending' // Initial status set to "Pending"
             });
             console.log('Submitted:', response.data);
+            alert('uploaded Successfully !')
             // Reset the form
             setName('');
             setUrl('');
